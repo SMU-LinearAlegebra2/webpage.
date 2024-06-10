@@ -1,0 +1,49 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-top: 50px;
+}
+
+.webcam-container {
+  position: relative;
+}
+
+#video {
+  display: block;
+  margin: 0 auto;
+}
+
+#canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.capture-button-container {
+  position: relative;
+  margin-top: 20px;
+}
+
+#captureButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 20px;
+}
+
+#capturedImage {
+  position: absolute;
+  bottom: 50px; /* 수정된 부분 */
+  /* 수정된 부분 */
+  width: 160px;
+  height: auto;
+  display: none;
+}

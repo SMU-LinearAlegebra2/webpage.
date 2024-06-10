@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>웹캠으로 사진 찍기</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>얼굴 인식</h1>
+      <div class="webcam-container">
+        <video id="video" width="640" height="480" autoplay></video>
+        <canvas id="canvas" width="160" height="120"></canvas>
+      </div>
+      <div class="capture-button-container">
+        <button id="captureButton">촬영</button>
+      </div>
+      <form id="uploadForm" action="/upload" method="post">
+        <input type="hidden" id="imageData" name="imageData" />
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
